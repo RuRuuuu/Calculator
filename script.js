@@ -1,7 +1,7 @@
 
 
 window.onload = page;
-window.onresize = pgae;
+window.onresize = page;
 
 function page(){
     myWidth = window.innerWidth;
