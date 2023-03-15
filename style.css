@@ -30,7 +30,7 @@ form input{
     text-align: right;
     border: none;
     pointer-events:none ;
-    color:white;
+    color:black
 
 }
 
@@ -55,7 +55,7 @@ form input{
 
  .small{
     box-shadow:2px 2px 4px rgb(0,0,0,0.7);
-    width:70px;
+    width:8vw;
     height: 55px;
     font-size: 22px;
     font-weight: 600;
@@ -114,6 +114,20 @@ form input{
     
     }
 
+
+    .btn-erase{
+        width:110px;
+      height: 55px;
+      font-size: 22px;
+      font-weight: 600;
+      cursor: pointer;
+      box-shadow: 7px 7px 8px rgb(0,0,0,0.7);
+      border: none;
+      margin: 3px;
+      margin-top:5px;
+      border-radius: 5px;
+      }
+      
 
 
     /*for mobile responsive */

@@ -163,3 +163,41 @@ $("#num16").on("click", function(){
 })
 
 
+
+const buton = document.querySelectorAll(".btn");
+const screen = document.querySelector(".screen");
+const egualBtn = document.querySelector(".btn-equal");
+const erase = document.querySelector(".btn-erase");
+
+
+console.log(buton);
+console.log(screen)
+
+buton.forEach(function(button) {
+  button.addEventListener("click", function(e) {
+    const eachValue = e.target.dataset.num;
+    screen.value += eachValue;
+  })
+})
+
+$("#num17").click(function() {
+  screen.value = "";
+  $("#num17").addClass("small");
+})
+
+
+
+
+    
+    $(".black").on("click", function(){
+        $(".screen").css("background-color", "black");
+        $(".screen").css("color", "white");
+
+
+        setTimeout(function(){ 
+    $(".black").on("click", function(){
+        $(".screen").css("background-color", "white");
+        $(".screen").css("color", "black");
+    })
+        }, 500)
+    })
