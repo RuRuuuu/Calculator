@@ -166,7 +166,7 @@ $("#num16").on("click", function(){
 
 const buton = document.querySelectorAll(".btn");
 const screen = document.querySelector(".screen");
-const egualBtn = document.querySelector(".btn-equal");
+const equalBtn = document.querySelector(".btn-equal");
 const erase = document.querySelector(".btn-erase");
 
 
@@ -189,15 +189,17 @@ $("#num17").click(function() {
 
 
     
-    $(".black").on("click", function(){
-        $(".screen").css("background-color", "black");
-        $(".screen").css("color", "white");
+    const blac = document.querySelector(".black");
+    console.log(blac)
 
-
-        setTimeout(function(){ 
-    $(".black").on("click", function(){
-        $(".screen").css("background-color", "white");
-        $(".screen").css("color", "black");
-    })
-        }, 500)
+    blac.addEventListener("click",function(){
+          if (screen.style.backgroundColor === "white") {
+            screen.style.backgroundColor = "black";
+            screen.style.color = "white";
+            
+          } else {
+            screen.style.backgroundColor = "white";
+            screen.style.color = "black";
+            
+          }
     })
